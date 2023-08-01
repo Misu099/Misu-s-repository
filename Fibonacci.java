@@ -20,8 +20,8 @@ public class Fibonacci {
         if (theSequence == null) {
             System.out.println("null sequence");
         } else
-            for (int i = 0; i < theSequence.length; i++) {
-                System.out.print(theSequence[i] + " ");
+            for (int i : theSequence) {
+                System.out.print(i + " ");
             }
         System.out.println();
     }
