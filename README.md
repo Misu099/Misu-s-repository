@@ -3,7 +3,7 @@
 
 
 
- Misu's first repository
+ Misu's first repository.
 
 
 

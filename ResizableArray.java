@@ -14,7 +14,6 @@ public class ResizableArray {
         arr = new String[size];
     }
 
-
     public boolean update(String s, int index) {
         if (index > (arr.length - 1)) {
             return false;
@@ -110,4 +109,3 @@ public class ResizableArray {
         System.out.println();
     }
 }
-

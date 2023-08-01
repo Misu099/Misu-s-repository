@@ -13,7 +13,6 @@ public class Dice {
             System.out.println("YOU WON!");
         } else
             System.out.println("YOU ARE A LOSER!");
-
     }
 
     public void playTryToGuessAValueLowerThanTheSumOfNRolls(int n) {
@@ -33,7 +32,6 @@ public class Dice {
             System.out.println("YOU ARE A LOSER!");
 
     }
-
 
     public void playRollDiceWithPC() {
         System.out.println("You rolled: ");
@@ -129,5 +127,3 @@ public class Dice {
         System.out.println();
     }
 }
-
-

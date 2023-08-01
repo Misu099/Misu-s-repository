@@ -62,7 +62,4 @@ public class Queue {
             System.out.print(arr[j] + " ");
         }
     }
-
-
 }
-
