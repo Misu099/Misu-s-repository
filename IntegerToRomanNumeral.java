@@ -8,19 +8,19 @@ public class IntegerToRomanNumeral {
         if (num < 1 || num > 10000) {
             return null;
         }
-            result = "";
-            while (num > 0) {
-                for (int i = 0; i < milestones.length; i++) {
-                    temp = num - milestones[i];
-                    if (temp >= 0) {
-                        //  System.out.println("loop:" + i + " returns num:" + num + "and result:" + result);
-                        result = result + milestonepair[i];
-                        num = num - milestones[i];
-                        i--;
-                        // System.out.println("loop:" + i + " returns num:" + num + "and result:" + result);
-                    }
+        result = "";
+        while (num > 0) {
+            for (int i = 0; i < milestones.length; i++) {
+                temp = num - milestones[i];
+                if (temp >= 0) {
+                    //  System.out.println("loop:" + i + " returns num:" + num + "and result:" + result);
+                    result = result + milestonepair[i];
+                    num = num - milestones[i];
+                    i--;
+                    // System.out.println("loop:" + i + " returns num:" + num + "and result:" + result);
                 }
-            }return result;
+            }
         }
-
+        return result;
     }
+}
