@@ -167,7 +167,6 @@ public class IntegerToRomanNumeral {
             case 5:
                 result += "V̅";
                 return num - (temp * 1000);
-
             case 6:
                 result += "V̅M";
                 return num - (temp * 1000);
