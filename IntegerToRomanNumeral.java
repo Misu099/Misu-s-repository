@@ -59,7 +59,7 @@ public class IntegerToRomanNumeral {
         }
     }
 
-    public int tens(int num) {
+    private int tens(int num) {
         int temp = num / 10;
         switch (temp) {
             case 1:
@@ -102,7 +102,7 @@ public class IntegerToRomanNumeral {
         }
     }
 
-    public int hundreds(int num) {
+    private int hundreds(int num) {
         int temp = num / 100;
         switch (temp) {
             case 1:
@@ -145,7 +145,7 @@ public class IntegerToRomanNumeral {
         }
     }
 
-    public int thousands(int num) {
+    private int thousands(int num) {
         int temp = num / 1000;
         switch (temp) {
             case 1:

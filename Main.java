@@ -3,7 +3,8 @@ public class Main {
 
 
 IntegerToRomanNumeral test =new IntegerToRomanNumeral();
-        System.out.println(test.convert(9999));
+
+        System.out.println(test.convert(4));
 
     }
 }
