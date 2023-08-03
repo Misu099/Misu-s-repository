@@ -1,8 +1,8 @@
 public class IntegerToRomanNumeral {
     private static final int[] MILESTONES = {10000, 9000, 5000, 4000, 1000,
-            900, 500, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+            900, 500,400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
     private static final String[] MILESTONESPAIRS = {"X̅", "I̅X̅", "V̅", "MV̅", "M",
-            "CM", "D", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+            "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
     private int temp;
     private String result;
 

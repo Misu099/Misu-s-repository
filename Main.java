@@ -7,8 +7,9 @@ public class Main {
 //    System.out.println("loop:" + i + " returns:" + test.convert(i));
 //}
 
-        for (int i = 10000; i > 5000; i = i - 435) {
-            System.out.println("loop:" + i + " returns:" + test.convert(i));
-        }
+//        for (int i = 10000; i > 5000; i = i - 435) {
+//            System.out.println("loop:" + i + " returns:" + test.convert(i));
+//        }
+        System.out.println(test.convert(400));
     }
 }
