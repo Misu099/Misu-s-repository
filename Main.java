@@ -1,15 +1,8 @@
 public class Main {
     public static void main(String[] args) {
 
-        IntegerToRomanNumeral test = new IntegerToRomanNumeral();
-
-//for (int i =0; i<99; i++){
-//    System.out.println("loop:" + i + " returns:" + test.convert(i));
-//}
-
-//        for (int i = 10000; i > 5000; i = i - 435) {
-//            System.out.println("loop:" + i + " returns:" + test.convert(i));
-//        }
-        System.out.println(test.convert(400));
+        int[] nums = {1, 2, 3, 4, 5, 6};
+        ContainsDuplicate test = new ContainsDuplicate();
+        System.out.println(test.containsDuplicate(nums));
     }
 }
