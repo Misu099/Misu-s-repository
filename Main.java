@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
 
-    SquaresOfNaturalNumbers test = new SquaresOfNaturalNumbers();
-    test.generate(815);
+    IsPowerOfN test = new IsPowerOfN();
+        System.out.println(test.isPowerOf(100,8));
 
     }
 }
