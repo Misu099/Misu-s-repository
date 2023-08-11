@@ -1,8 +1,9 @@
 public class Main {
     public static void main(String[] args) {
 
-    IsPowerOfN test = new IsPowerOfN();
-        System.out.println(test.isPowerOf(100,8));
+   DecimalToBinaryConverter test = new DecimalToBinaryConverter();
+
+        System.out.println(test.turn(3000));
 
     }
 }
