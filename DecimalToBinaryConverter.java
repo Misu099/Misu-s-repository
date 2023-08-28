@@ -17,16 +17,8 @@ public class DecimalToBinaryConverter {
         }
         return result;
     }
-/*    private String clear(String s) {
-        for (int j = 0; j < s.length(); j++) {
-            if (s.charAt(j) == 0) {
-                 ceva
-                          ceva
-                         ceva
-                                 ceva
-            }
-        }
-        return result;
+  /* private String clear(String s) {
+    ceva sa scoata 0 urile de la inceput
     }*/
 
 }
