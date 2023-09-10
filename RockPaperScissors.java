@@ -5,10 +5,6 @@ import java.util.Scanner;
 
 public class RockPaperScissors {
     Map<Integer, String> map = new HashMap<>();
-    //    0- rock
-//    1 - paper
-//    2 - scissors
-    private int userChoice = -1;
 
     public RockPaperScissors() {
         map.put(0, "Rock");
@@ -19,10 +15,13 @@ public class RockPaperScissors {
 
     public String play() {
         Scanner sc = new Scanner(System.in);
+        int userChoice = -1;
+
         while (userChoice < 0 || userChoice > 2) {
             System.out.println("Enter a choice (0 for Rock, 1 for Paper, 2 for Scissors):");
             userChoice = sc.nextInt();
         }
+
         Random rand = new Random();
         int computerChoice = rand.nextInt(3);
 
@@ -36,7 +35,7 @@ public class RockPaperScissors {
         } else if (userChoice == computerChoice) {
             System.out.println("It's a draw!");
             return "draw";
-        } else{
+        } else {
             System.out.println("Computer wins!");
             return "computer";
         }
