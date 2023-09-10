@@ -1,7 +1,4 @@
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class RockPaperScissors {
     Map<Integer, String> map = new HashMap<>();
@@ -19,7 +16,13 @@ public class RockPaperScissors {
 
         while (userChoice < 0 || userChoice > 2) {
             System.out.println("Enter a choice (0 for Rock, 1 for Paper, 2 for Scissors):");
-            userChoice = sc.nextInt();
+            try {
+                userChoice = sc.nextInt();
+            } catch (InputMismatchException e) {
+                System.out.println("Not a valid choice!");
+                sc.nextLine();
+                userChoice = -1;
+            }
         }
 
         Random rand = new Random();
