@@ -7,7 +7,6 @@ public class RockPaperScissors {
         map.put(0, "Rock");
         map.put(1, "Paper");
         map.put(2, "Scissors");
-
     }
 
     public String play() {
