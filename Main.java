@@ -1,14 +1,11 @@
-
-import javax.swing.SwingUtilities;
 public class Main {
     public static void main(String[] args) {
 
 
-        MyDictionary test = new MyDictionary();
+        MyShoppingList test = new MyShoppingList();
         test.addInput();
-        test.add("cal","horse");
+        test.addInput();
         System.out.println(test);
-
 
     }
 }
