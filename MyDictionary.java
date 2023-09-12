@@ -4,11 +4,12 @@ import java.util.Scanner;
 
 public class MyDictionary {
 
-    private Map<String, String> myDictionary = new HashMap<>();
+    private Map<String, String> myDictionary = new HashMap<>(); //TODO: make this final, you will not change it during the execution
 
-    public MyDictionary() {
+    public MyDictionary() {   //TODO: remove this, a no args constructor is made by the compiler if you do not provide any constructor
     }
 
+    //TODO: make this as an use anywhere class, not dependent on console
     public void addInput() {
         Scanner sc = new Scanner(System.in);
         String firstWord = "";
