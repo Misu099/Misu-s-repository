@@ -5,9 +5,10 @@ public class Main {
 
 
         MyDictionary test = new MyDictionary();
-        test.add();
-        test.add();
-        System.out.println(test.search("cal"));
-        System.out.println(test.search("horsee"));
+        test.addInput();
+        test.add("cal","horse");
+        System.out.println(test);
+
+
     }
 }

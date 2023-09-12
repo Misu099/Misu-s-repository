@@ -4,23 +4,38 @@ import java.util.Scanner;
 
 public class MyDictionary {
 
-   private Map<String, String> myDictionary = new HashMap<>();
+    private Map<String, String> myDictionary = new HashMap<>();
+
     public MyDictionary() {
     }
 
-    public void add(){
-            Scanner sc = new Scanner(System.in);
-            String a = sc.nextLine().toLowerCase();
-            String b = sc.nextLine().toLowerCase();
-        myDictionary.put(a,b);
+    public void addInput() {
+        Scanner sc = new Scanner(System.in);
+        String firstWord = "";
+        while (firstWord.isBlank()) {
+            System.out.println("First word:");
+            firstWord = sc.nextLine();
+        }
+        String secondWord = "";
+        while (secondWord.isBlank()) {
+            System.out.println("Second word:");
+            secondWord = sc.nextLine();
+        }
+        add(firstWord, secondWord);
     }
 
-    public String search(String c){
-        if (myDictionary.containsKey(c)){
-        return c + "=" + myDictionary.get(c);
-        } else if (myDictionary.containsValue(c)){
+    public void add(String firstWord, String secondWord) {
+        myDictionary.put(firstWord.toLowerCase(), secondWord.toLowerCase());
+    }
 
-           return  myDictionary.get(c) + "=" + c;
-        }else return null;
+    public String search(String keyToSearch) {
+        if (myDictionary.containsKey(keyToSearch)) {
+            return keyToSearch + "=" + myDictionary.get(keyToSearch);
+        }
+        return null;
+    }
+
+    public String toString() {
+        return myDictionary.toString();
     }
 }
