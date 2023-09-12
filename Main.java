@@ -6,6 +6,7 @@ public class Main {
         test.addInput();
         test.addInput();
         System.out.println(test);
+        test.print();
 
     }
 }

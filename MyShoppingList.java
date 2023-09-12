@@ -19,4 +19,7 @@ public class MyShoppingList {
     public String toString() {
         return myShoppingList.toString();
     }
+    public void print(){
+        myShoppingList.forEach(item -> System.out.println(item));
+    }
 }
