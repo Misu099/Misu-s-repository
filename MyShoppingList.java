@@ -1,26 +1,28 @@
 import java.util.HashSet;
-import java.util.Scanner;
 import java.util.Set;
+
 //TODO: make a class to demonstrate the functionalities of this class and the other one
 public class MyShoppingList {
 
-    Set<String> myShoppingList = new HashSet<>(); //TODO: make this private and final
+    private final Set<String> MYSHOPPINGLIST = new HashSet<>();
 
-    public void addInput() { //TODO: no console
-        Scanner sc = new Scanner(System.in);
-        String item = "";
-        while (item.isBlank()) {
-            System.out.println("Add next:");
-            item = sc.nextLine();
+    public Object add(String item) {
+        if (!item.isBlank()) {
+            MYSHOPPINGLIST.add(item.toLowerCase());
         }
-        myShoppingList.add(item);
+        return null;
+    }
+
+    public void remove(String item) {
+        MYSHOPPINGLIST.remove(item.toLowerCase());
+
     }
 
     public String toString() {
-        return myShoppingList.toString();
+        return MYSHOPPINGLIST.toString();
     }
 
     public void print() {
-        myShoppingList.forEach(item -> System.out.println(item)); //Nice lambda :)
+        MYSHOPPINGLIST.forEach(item -> System.out.println(item));
     }
 }
