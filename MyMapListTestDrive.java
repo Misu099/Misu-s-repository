@@ -1,7 +1,7 @@
 public class MyMapListTestDrive {
 
 
-    public static void main ( String args[]){
+    public static void main(String args[]) {
 
         MyShoppingList testList = new MyShoppingList();
         MyDictionary testMap = new MyDictionary();
@@ -21,6 +21,15 @@ public class MyMapListTestDrive {
 
         testMap.add("one", "1");
 
+        System.out.println(testMap);
+        testMap.print();
+        testMap.add("cal", "hose");
+        testMap.print();
+        System.out.println(testMap.search("cal"));
+        testMap.update("cal", "hOrse");
+        testMap.print();
+        System.out.println(testMap);
+        testMap.search("ol");
         System.out.println(testMap);
 
     }

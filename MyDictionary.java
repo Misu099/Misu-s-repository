@@ -12,13 +12,13 @@ public class MyDictionary {
 
     public String search(String keyToSearch) {
         if (MYDICTIONARY.containsKey(keyToSearch)) {
-            return keyToSearch + "=" + MYDICTIONARY.get(keyToSearch);
+            return "Search: " + keyToSearch + "=" + MYDICTIONARY.get(keyToSearch);
         }
         return null;
     }
 
     public void update(String keyWord, String valWord) {
-        MYDICTIONARY.replace(keyWord, valWord);
+        MYDICTIONARY.replace(keyWord.toLowerCase(), valWord.toLowerCase());
     }
 
 
@@ -31,6 +31,9 @@ public class MyDictionary {
     }
 
     public void print() {
-//TODO idk how        MYDICTIONARY.forEach(key, valu -> System.out.println( key + "=" + valu));
+        for (String key : MYDICTIONARY.keySet()) {
+            System.out.println(key + "=" + MYDICTIONARY.get(key));
+
+        }
     }
 }
