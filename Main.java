@@ -1,12 +1,15 @@
+
+
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String args[]) {
+
+        Items test1 = new Items("paine", 1, 1.6);
 
 
-        MyShoppingList test = new MyShoppingList();
-        test.addInput();
-        test.addInput();
-        System.out.println(test);
-        test.print();
+        TextRW magie = new TextRW();
+        magie.read("input.txt");
+        magie.print();
+
 
     }
 }
