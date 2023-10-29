@@ -7,7 +7,15 @@ public class Main {
         Items test1 = new Items("paine", 1, 1.6);
 
         TextRW magie = new TextRW();
-        magie.read("input.txt");
+        magie.add(test1);
         magie.print();
+magie.read("input.txt");
+magie.print();
+magie.write("output.txt");
+magie.print();
+
+
+
+
     }
 }

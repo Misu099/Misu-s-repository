@@ -15,10 +15,12 @@ public class ShoppingList implements Serializable {
     }
 
 
-
     public void print() {
-         System.out.println("LISTA:");
+        System.out.println("LISTA:");
         LISTA.forEach(s -> System.out.println(s));
+    }
+    public String toString(){
+        return LISTA.toString();
     }
 
 }
