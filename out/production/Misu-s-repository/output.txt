@@ -1,1 +1,1 @@
-iochallenge.ShoppingList@1698c449
+[paine, 1, 1.6, carne, 1, 1.5]

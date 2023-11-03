@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Misu-s-repository.iml" filepath="$PROJECT_DIR$/.idea/Misu-s-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/genericschallange/genericschallange.iml" filepath="$PROJECT_DIR$/genericschallange/genericschallange.iml" />
     </modules>
   </component>
 </project>
