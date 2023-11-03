@@ -39,8 +39,6 @@ public class JukeboxStreams {
         System.out.println(genres);
 
 
-
-
     }
 
 }
