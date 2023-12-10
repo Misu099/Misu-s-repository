@@ -8,7 +8,7 @@ public class SimpleAnimation {
     private int xPos = 0;
     private int yPos = 0;
 
-    private int xPos2 = 400;
+    private int xPos2 = 500;
     private int yPos2 = 0;
 
 
@@ -27,10 +27,10 @@ public class SimpleAnimation {
 
 
         frame.getContentPane().add(drawPanel);
-        frame.setSize(500, 500);
+        frame.setSize(600, 600);
         frame.setVisible(true);
 
-        for (int i = 0; i < 400; i++) {
+        for (int i = 0; i < 500; i++) {
             xPos++;
             yPos++;
             drawPanel.repaint();
@@ -38,17 +38,48 @@ public class SimpleAnimation {
             yPos2++;
             drawPanel.repaint();
             try {
-                TimeUnit.MICROSECONDS.sleep(10000);
+                TimeUnit.MICROSECONDS.sleep(3000);
             } catch (Exception e) {
                 e.printStackTrace();
             }
         }
+         xPos = 0;
+         yPos = 0;
+
+         xPos2 = 500;
+         yPos2 = 0;
+
+
+        for (int i = 0; i < 500; i++) {
+            xPos++;
+            yPos++;
+            drawPanel.repaint();
+            xPos2--;
+            yPos2++;
+            drawPanel.repaint();
+            try {
+                TimeUnit.MICROSECONDS.sleep(6000);
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+
+
+
+
+
+
     }
 
     class MyDrawPanel extends JPanel {
         public void paintComponent(Graphics g) {
-            g.setColor(Color.green);
+            g.setColor(Color.white);
+            g.fillRect(0,0, this.getWidth(),this.getHeight());
+
+            g.setColor(Color.red);
             g.fillOval(xPos, yPos, 40, 40);
+
             g.setColor(Color.blue);
             g.fillOval(xPos2,yPos2,40,40);
         }
