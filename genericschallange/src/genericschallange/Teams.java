@@ -5,7 +5,7 @@ package genericschallange;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Teams  {
+public class Teams {
 
     private final ArrayList<Team> LIST = new ArrayList<>();
 
@@ -13,13 +13,12 @@ public class Teams  {
         LIST.add(t);
     }
 
-    public void sort(){
+    public void sort() {
         Collections.sort(LIST, (Team t1, Team t2) -> Integer.compare(t1.getPoints(), t2.getPoints()));
     }
 
 
-
-    public String toString(){
+    public String toString() {
         return LIST.toString();
     }
 

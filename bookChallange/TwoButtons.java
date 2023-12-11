@@ -2,8 +2,6 @@ package bookChallange;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class TwoButtons {
     private JFrame frame;
@@ -20,10 +18,10 @@ public class TwoButtons {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JButton labelButton = new JButton("Change label");
-        labelButton.addActionListener(event->label.setText("Clicked"));
+        labelButton.addActionListener(event -> label.setText("Clicked"));
 
         JButton colorButton = new JButton("Change circle");
-        colorButton.addActionListener(event-> frame.repaint());
+        colorButton.addActionListener(event -> frame.repaint());
 
         label = new JLabel("I'm a label");
         MyDrawPanel drawPanel = new MyDrawPanel();

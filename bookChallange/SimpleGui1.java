@@ -8,7 +8,7 @@ public class SimpleGui1 {
         JButton button = new JButton("butonul");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add(button);
-        frame.setSize(300,300);
+        frame.setSize(300, 300);
         frame.setVisible(true);
 
     }

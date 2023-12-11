@@ -1,7 +1,5 @@
 package iochallenge;
 
-import iochallenge.Items;
-
 import java.io.Serializable;
 import java.util.LinkedList;
 import java.util.List;
@@ -19,7 +17,8 @@ public class ShoppingList implements Serializable {
         System.out.println("LISTA:");
         LISTA.forEach(s -> System.out.println(s));
     }
-    public String toString(){
+
+    public String toString() {
         return LISTA.toString();
     }
 

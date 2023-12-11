@@ -1,5 +1,6 @@
 
 package genericschallange;
+
 public class Team {
 
     private String name;
@@ -13,7 +14,7 @@ public class Team {
         return name;
     }
 
-    public Team(String name, int points){
+    public Team(String name, int points) {
         this.name = name;
         this.points = points;
     }

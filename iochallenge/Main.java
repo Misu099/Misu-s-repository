@@ -9,12 +9,10 @@ public class Main {
         TextRW magie = new TextRW();
         magie.add(test1);
         magie.print();
-magie.read("input.txt");
-magie.print();
-magie.write("output.txt");
-magie.print();
-
-
+        magie.read("input.txt");
+        magie.print();
+        magie.write("output.txt");
+        magie.print();
 
 
     }

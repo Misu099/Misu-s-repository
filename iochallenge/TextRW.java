@@ -1,7 +1,5 @@
 package iochallenge;
 
-import iochallenge.Items;
-
 import java.io.*;
 
 public class TextRW {

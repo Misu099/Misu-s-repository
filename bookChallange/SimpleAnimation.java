@@ -43,11 +43,11 @@ public class SimpleAnimation {
                 e.printStackTrace();
             }
         }
-         xPos = 0;
-         yPos = 0;
+        xPos = 0;
+        yPos = 0;
 
-         xPos2 = 500;
-         yPos2 = 0;
+        xPos2 = 500;
+        yPos2 = 0;
 
 
         for (int i = 0; i < 500; i++) {
@@ -65,23 +65,18 @@ public class SimpleAnimation {
         }
 
 
-
-
-
-
-
     }
 
     class MyDrawPanel extends JPanel {
         public void paintComponent(Graphics g) {
             g.setColor(Color.white);
-            g.fillRect(0,0, this.getWidth(),this.getHeight());
+            g.fillRect(0, 0, this.getWidth(), this.getHeight());
 
             g.setColor(Color.red);
             g.fillOval(xPos, yPos, 40, 40);
 
             g.setColor(Color.blue);
-            g.fillOval(xPos2,yPos2,40,40);
+            g.fillOval(xPos2, yPos2, 40, 40);
         }
     }
 
