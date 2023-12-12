@@ -12,6 +12,7 @@ public class TextArea1 {
     }
 
     public void go() {
+
         JFrame frame = new JFrame();
         JPanel panel = new JPanel();
         JButton button = new JButton("Do NOT click me!!!");
